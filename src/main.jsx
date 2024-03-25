@@ -12,6 +12,6 @@ import { FocusScreen } from './04-useRef/FocusScreen'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FocusScreen />
+    <MultipleCustomHooks />
   </React.StrictMode>,
 )
