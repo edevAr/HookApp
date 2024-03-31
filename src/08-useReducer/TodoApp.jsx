@@ -6,10 +6,10 @@ import { useTodo } from '../hooks/useTodo'
 
 
 export const TodoApp = () => {
-    const {todos, handleDeleteItem, handleNewTodo, handleToggleTodo} = useTodo();
+    const {todos, todosCount, pendingTodosCount, handleDeleteItem, handleNewTodo, handleToggleTodo} = useTodo();
   return (
     <>
-        <h1>TodoApp: 10, <small>pendientes: 2</small></h1>
+        <h1>TodoApp: {todosCount}, <small>pendientes: {pendingTodosCount} </small></h1>
         <hr />
         <div className='row'>
             <div className='col-7'>
